@@ -1,30 +1,45 @@
 package org.example;
-import java.util.LinkedList;
-import java.util.stream.Collector;
-import java.util.stream.Collectors;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Twitter {
-    private LinkedList<Usuario> usuarios;
+    private List<Usuario> usuarios;
 
-    public Twitter(){
-        this.usuarios = new LinkedList<Usuario>();
+    public Twitter()
+    {
+        this.usuarios = new ArrayList<Usuario>();
     }
 
-    public void agregarUsuario(Usuario user){
-        if(this.buscarUsuario(user.getScreenName()) == null){
-            System.out.println("Ya existe el usuario");
+    public Usuario buscarUsuario(String screenName) {
+        return this.usuarios.stream()
+                .filter(u -> u.getScreenName().equals(screenName))
+                .findFirst()
+                .orElse(null);
+    }
+
+    public void agregarUsuario(String screenName)
+    {
+        if (this.buscarUsuario(screenName) != null) {
+            throw new IllegalArgumentException("El screenName ya está en uso.");
         }
-        else {
-            this.usuarios.add(user);
+        // Si no existe, lo creamos y agregamos
+        this.usuarios.add(new Usuario(screenName));
+    }
+
+    public void eliminarUsuario(String screenName)
+    {
+        Usuario aEliminar = this.buscarUsuario(screenName);
+        if (aEliminar == null) return;
+        List<Itweet> tweetsDelUsuario = aEliminar.getTweets();
+        this.usuarios.remove(screenName);
+        for (Usuario u : usuarios) {
+            u.eliminarReTweetsAsociados(tweetsDelUsuario);
         }
-
     }
 
-    public Usuario buscarUsuario(String nombre){
-        return this.usuarios.stream().filter(usuario -> usuario.quienSoy().equals(nombre)).findFirst().orElse(null);
-    }
-
-    public void eliminarUsuario(String usuario){
-
+    public int cantidadDeUsuarios()
+    {
+        return this.usuarios.size();
     }
 }

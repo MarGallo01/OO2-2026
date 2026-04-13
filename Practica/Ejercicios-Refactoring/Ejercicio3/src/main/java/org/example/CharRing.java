@@ -1,17 +1,16 @@
 package org.example;
 
-public class CharRing {
+public class CharRing extends Ring{
     private char[] source;
-    private int idx;
 
     public CharRing(String src) {
+        super(src.length());
         source = src.toCharArray();
-        idx = 0;
+
     }
 
     public char next() {
-        if (idx >= source.length)
-            idx = 0;
-        return source[idx++];
+       return source[devolverPosicion()];
     }
+
 }
