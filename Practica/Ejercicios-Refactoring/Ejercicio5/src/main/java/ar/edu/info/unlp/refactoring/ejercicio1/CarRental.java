@@ -3,29 +3,25 @@ package ar.edu.info.unlp.refactoring.ejercicio1;
 import java.time.LocalDate;
 
 public class CarRental extends Product {
-    public double cost;
-    private TimePeriod timePeriod;
+    private double cost;  /* variable ahora privada */
     private Company company;
 
     public CarRental(double cost, TimePeriod timePeriod, Company company) {
+        super(timePeriod);
         this.cost = cost;
-        this.timePeriod = timePeriod;
         this.company = company;
     }
 
-    public LocalDate startDate() {
-        return this.timePeriod.start();
-    }
-
-    public LocalDate endDate() {
-        return this.timePeriod.end();
-    }
 
     public double price() {
         return this.company.price() * this.company.promotionRate();
     }
 
     public double cost() {
+        return this.cost;
+    }
+
+    public double getCost(){  /* nuevo metodo  */
         return this.cost;
     }
 }
@@ -53,3 +49,29 @@ public class CarRental extends Product {
    Luego aplique los refactoring correspondientes para eliminarlos. Verifique que los tests provistos sigan funcionando
 
 */
+
+/*
+   1) El metodo refactoring encapsulate field se deben generar getter de la variable en cuestion, y luego cambiarla de publica a privada.
+      Los test fallan porque se accedia a la variable directamente, puesto a que era publica, para que los test pasen es necesario cambiar los test, utilizando los nuevos getters
+
+   2) No deben modificarse los test porque  se accede a la variable mediante el getter, pero debe modificarse este ultimo
+
+   3) Para aplicar el pull up method
+        i)    Asegurarse que los metodos sean identicos
+        ii)   Si el selector del metodo es diferente en cada clase renombrar
+        iii)  Si el metodo llama a otro que no esta en la superclase, declararlo como abstracto en la superclase
+        iv)   Si el metodo llama a un atrbuto declarado en las subclases, usar "pull up field"  o "self encapsulated field"
+              y declarar los getters abstractos en la superclase.
+        v)    Crear un nuevo metodo en la superclase, copiar el cuerpo de uno de los metodos  a el
+        vi)   Borrar el metodo de una de las subclases
+        vii)  Compilar y testear
+        viii) Repetir desde vi) hasta que no quede en ninguna subclase
+
+        En este caso, primero uso pull up field para subir el atributo timePeriod a la clase product, por lo tanto debe estar en el constructor de la misma, junto con su respectivo getter
+        luego hay que copiar el metodo en la clase padre, para posteriormente eliminar la variable de las subclases, junto con los metodos
+
+
+   6)
+
+
+ */

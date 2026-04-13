@@ -3,29 +3,29 @@ package ar.edu.info.unlp.refactoring.ejercicio1;
 import java.time.LocalDate;
 
 public class HotelStay extends Product {
-    public double cost;
-    private TimePeriod timePeriod;
+    private double quote;  /* variable ahora privada, luego en el punto 2 cambia de cost a quote */
     private Hotel hotel;
 
     public HotelStay(double cost, TimePeriod timePeriod, Hotel hotel) {
-        this.cost = cost;
-        this.timePeriod = timePeriod;
+        super(timePeriod);
+        this.quote = cost;  /* cambia por nuevo nombre de variable o quizas podria usar el getter */
         this.hotel = hotel;
     }
 
-    public LocalDate startDate() {
-        return this.timePeriod.start();
-    }
-
-    public LocalDate endDate() {
-        return this.timePeriod.end();
-    }
 
     public double priceFactor() {
-        return this.cost / this.price();
+        return this.quote / this.price();  /* o podria usar el getter */
     }
 
+    /* agrego el getTimePeriod por uso de pull up field */
+
     public double price() {
-        return this.timePeriod.duration() * this.hotel.nightPrice() * this.hotel.discountRate();
+        return this.getTimePeriod().duration() * this.hotel.nightPrice() * this.hotel.discountRate();
+    }
+
+    /* nuevo metodo getter necesario por metodo encapsulate field */
+
+    public double getCost(){
+        return this.quote;  /* cambia nombre por rename field */
     }
 }

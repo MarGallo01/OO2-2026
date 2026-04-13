@@ -1,6 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PropertiesComponent">{}</component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b0c6fcea-6b23-40ab-9e4e-d3d5d176962c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ar/edu/info/unlp/refactoring/ejercicio1/CarRental.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/info/unlp/refactoring/ejercicio1/CarRental.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ar/edu/info/unlp/refactoring/ejercicio1/HotelStay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/info/unlp/refactoring/ejercicio1/HotelStay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ar/edu/info/unlp/refactoring/ejercicio1/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/info/unlp/refactoring/ejercicio1/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ar/edu/info/unlp/refactoring/ejercicio1/CarRentalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ar/edu/info/unlp/refactoring/ejercicio1/CarRentalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ar/edu/info/unlp/refactoring/ejercicio1/HotelStayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ar/edu/info/unlp/refactoring/ejercicio1/HotelStayTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="3CJWXg5WKMZXkmTKck7H0BY8X8Z" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.All in refactoring-ej-1.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/martiniano/Facultad/4ato_Año/OO2-2026/Practica/Ejercicios-Refactoring/Ejercicio5",
+    "to.speed.mode.migration.done": "true"
+  }
+}]]></component>
   <component name="RunManager">
     <configuration name="All in refactoring-ej-1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="refactoring-ej-1" />
@@ -15,5 +57,22 @@
         <item itemvalue="JUnit.All in refactoring-ej-1" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-26cb7f24e5b0-intellij.indexing.shared.core-IU-253.29346.138" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b0c6fcea-6b23-40ab-9e4e-d3d5d176962c" name="Changes" comment="" />
+      <created>1776104195873</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1776104195873</updated>
+    </task>
+    <servers />
   </component>
 </project>
