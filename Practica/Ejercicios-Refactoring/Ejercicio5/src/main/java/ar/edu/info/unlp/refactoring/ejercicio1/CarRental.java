@@ -71,7 +71,7 @@ public class CarRental extends Product {
         luego hay que copiar el metodo en la clase padre, para posteriormente eliminar la variable de las subclases, junto con los metodos
 
 
-   6)
+   6)  preguntar, no entiendo 
 
 
  */
