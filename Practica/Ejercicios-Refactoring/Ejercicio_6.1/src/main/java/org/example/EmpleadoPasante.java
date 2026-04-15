@@ -21,7 +21,7 @@ i) Malos olores encontrados:
     -
     -
 ii) Primero uso pull up method, generando la clase abstracta empleado, para subir los atributos en comun nombre, apellido y sueldo basico.
-    Luego uso self-encapsulate fiel para cambiar los atributos de publicos a privado, ademas de generar sus correspondientes getters.
+    Luego uso self-encapsulate field para cambiar los atributos de publicos a privado, ademas de generar sus correspondientes getters.
 
 
  */

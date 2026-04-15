@@ -18,4 +18,8 @@ public class Direccion {
     public String getDepartamento(){
         return this.departamento;
     }
+
+    public String getDireccionFormateada(){
+        return localidad + "," + calle + "," + numero + "," + departamento;
+    }
 }
