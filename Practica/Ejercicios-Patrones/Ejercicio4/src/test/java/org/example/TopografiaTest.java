@@ -30,7 +30,6 @@ public class TopografiaTest {
         assertFalse(agua.equals(new Mixta(new Simple(1), new Simple(0), new Simple(1), new Simple(0))));
         assertFalse((new Mixta(new Simple(1), new Simple(0), new Simple(1), new Simple(0))).equals(agua));
         assertTrue((new Mixta(new Simple(1), new Simple(0), new Simple(1), new Simple(0))).equals(mixtaConMixta));
-//		assertTrue(mixta.equals(mixta)); aca llama al equals de object, comapra la misma referencia
     }
 
     @Test
