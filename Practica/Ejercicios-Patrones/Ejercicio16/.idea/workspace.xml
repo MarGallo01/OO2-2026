@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ae59797-8b4f-478b-ba65-7af88577e988" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Ejercicio11/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicio11/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ejercicio11/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio13/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio14/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio15/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio15/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicio15/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio15/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicio15/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio15/src/main/java/org/example/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,27 +20,27 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="3EH0jnWMWIOog5SsidnRxTXbiJ8" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "/home/martiniano/Facultad/4ato_Año/OO2-2026/Practica/Ejercicios-Patrones/Ejercicio16/src/main/java/org/example/Main.java",
-    "to.speed.mode.migration.done": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/home/martiniano/Facultad/4ato_Año/OO2-2026/Practica/Ejercicios-Patrones/Ejercicio16/src/main/java/org/example/Main.java&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
